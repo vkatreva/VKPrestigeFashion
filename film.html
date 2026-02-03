@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>Филм - VK Prestige Fashion</title>
+<style>
+a:link { 
+text-decoration:none;
+display:block;
+background-color:#4C0121;
+font-weight:bold;
+width:120px;
+border-radius:10px;
+text-align:center;
+padding:4px;
+font-size:18px;
+}
+a:hover {
+background-color:#fd63a4;
+border-radius:7px;
+}
+</style>
+</head>
+<body style="background-color:#fec3dd;">
+<h2 style="text-align:center;color:#4C0121; margin:50px;" >Час Пик 1</h2>
+<div style="text-align:center;"> 
+<button onclick="playPause()">Play/Pause</button> 
+<button onclick="makeBig()">Big</button>
+<button onclick="makeSmall()">Small</button>
+<button onclick="makeNormal()">Normal</button>
+<br> 
+<video id="video1" width="1000">
+<source src="movie.mp4" type="video/mp4">
+<source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+</div>
+<div style="margin-top:100px; margin-left:50px;">
+<a href="about.html" class="owner" style="color:#FFFFFF;">Назад</a>
+</div>
+<script> 
+var myVideo = document.getElementById("video1");
+ 
+function playPause() { 
+if (myVideo.paused) 
+  myVideo.play(); 
+else 
+  myVideo.pause(); 
+} 
+
+function makeBig() { 
+myVideo.width = 1500; 
+} 
+
+function makeSmall() { 
+myVideo.width = 500;
+} 
+
+function makeNormal() { 
+myVideo.width = 1000; 
+} 
+</script> 
+</body> 
+</html>

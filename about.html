@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<meta charset="UTF-8">
+<meta name="keywords" content="Рокли,Елегантни">
+<meta name="description" content="Сайт за елегантни рокли">
+<meta name="author" content="Веска Катрева">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>За VK Prestige Fashion</title>
+<style>
+</style>
+</head>
+<body>
+<header>
+<svg width="90" height="90">
+<a href="main.html">
+<circle cx="45" cy="45" r="40" stroke="#F4E6D7" stroke-width="1" fill="#4C0121" />
+<text fill="#F4E6D7" font-size="30" font-family="Brush Script MT" x="45" y="45" text-anchor="middle">VK</text>
+<text fill="#F4E6D7" font-size="12" font-family="Brush Script MT" x="43" y="55" text-anchor="middle">Prestige</text>
+<text fill="#F4E6D7" font-size="12" font-family="Brush Script MT" x="43" y="65" text-anchor="middle">Fashion</text>
+</a>
+</svg>
+<div style="margin-left:10px;">
+<h1 style="margin:0px;">VK Prestige Fashion</h1>
+<q>Изящен стил и безупречно качество за всеки ваш незабравим момент.</q>
+</div>
+</header>
+<nav class="horizontal">
+<ul>
+<li><a href="about.html">За VK Prestige Fashion</a></li>
+<li><a href="products.html">Продукти</a></li>
+<li><a href="orders.html">Поръчки</a></li>
+<li><a href="reviews.html">Мнения</a></li>
+<li><a href="job.html">Работа</a></li>
+</ul>
+</nav>
+<nav class="vertical">
+<ul>
+<li><a href="main.html">Начало</a></li>
+<li><a href="subscribe.html">Абонирай се</a></li>
+<li><a href="sizes.html">Размери и Грижа за дрехите </a></li>
+<li><a href="faq.html">Често задавани въпроси (FAQ)</a></li>
+<li><a href="contacts.html">Контакти </a></li>
+</ul>
+</nav>
+<div id="partners">
+<h2>Нашите партньори</h2>
+<iframe src="https://napudreni.com/collections/drehi-za-zheni/rokli/" width="200" height="200" target="_blank" rel="noopener"></iframe>
+<iframe src="https://www.orsay.com/bg?utm_source=google&utm_medium=cpc&utm_campaign=s_BRAND_P&utm_id=21901172856&gad_source=1&gad_campaignid=21901172856&gbraid=0AAAAA-cLlPhpQr3ntxZtZy1WP1JmuTlTu&gclid=CjwKCAiA1obMBhAbEiwAsUBbIljLbgaAL7pu-uJRCF8Bd0WYsHjV4iuWJjjbL1zDp4MYjQtCGCw5DxoC_UoQAvD_BwE" width="200" height="200" target="blank"></iframe>
+<iframe src="https://ephos-bg.com/c/rokli-1" width="200" height="200" target="_blank" rel="noopener"></iframe>
+</div>
+<div id="graphic">
+<h2>Развитието на VK Prestige Fashion през 2023 г.</h2>
+<canvas id="myCanvas" width="600" height="400" style="border:1px solid #000000;"></canvas> 
+</div>
+<div id="owner">
+<h2>За собственика:</h2>
+<ul>
+<li><a href="film.html">Филм</a></li>
+<li><a href="music.html">Музика</a></li>
+</ul>
+</div>
+<script>
+var c = document.getElementById("myCanvas"); 
+var ctx = c.getContext("2d");
+
+  function drawLineChart() {
+    ctx.beginPath();
+    ctx.moveTo(90, 300);
+
+    ctx.lineTo(150, 250); 
+    ctx.lineTo(250, 200); 
+    ctx.lineTo(350, 220); 
+    ctx.lineTo(450, 150); 
+    ctx.lineTo(550, 70); 
+    ctx.stroke();
+  }
+  
+  function drawXAxis() {
+    ctx.font = '16px Arial';
+    ctx.fillText('Време', 490, 370);
+    ctx.moveTo(90, 350);
+    ctx.lineTo(550, 350); 
+    ctx.stroke();
+  }
+
+  function drawYAxis() {
+    ctx.font = '16px Arial';
+    ctx.fillText('Приходи', 10, 65);
+    ctx.moveTo(90, 50);
+    ctx.lineTo(90, 350);
+    ctx.stroke();
+  }
+
+  drawYAxis();
+  drawXAxis();
+  drawLineChart();
+</script>
+<footer> © 2024 VK Prestige Fashion. All Rights Reserved.</footer>
+</body>
+</html>

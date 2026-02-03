@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<meta charset="UTF-8">
+<meta name="keywords" content="Рокли,Поръчки">
+<meta name="description" content="Форма за поръчка">
+<meta name="author" content="Веска Катрева">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Поръчки - VK Prestige Fashion</title>
+</head>
+<body>
+<header>
+<svg width="90" height="90">
+<a href="main.html">
+<circle cx="45" cy="45" r="40" stroke="#F4E6D7" stroke-width="1" fill="#4C0121" />
+<text fill="#F4E6D7" font-size="30" font-family="Brush Script MT" x="45" y="45" text-anchor="middle">VK</text>
+<text fill="#F4E6D7" font-size="12" font-family="Brush Script MT" x="43" y="55" text-anchor="middle">Prestige</text>
+<text fill="#F4E6D7" font-size="12" font-family="Brush Script MT" x="43" y="65" text-anchor="middle">Fashion</text>
+</a>
+</svg>
+<div style="margin-left:10px;">
+<h1 style="margin:0px;">VK Prestige Fashion</h1>
+<q>Изящен стил и безупречно качество за всеки ваш незабравим момент.</q>
+</div>
+</header>
+<nav class="horizontal">
+<ul>
+<li><a href="about.html">За VK Prestige Fashion</a></li>
+<li><a href="products.html">Продукти</a></li>
+<li><a href="orders.html">Поръчки</a></li>
+<li><a href="reviews.html">Мнения</a></li>
+<li><a href="job.html">Работа</a></li>
+</ul>
+</nav>
+<div class="content-form">
+<nav class="vertical">
+<ul>
+<li><a href="main.html">Начало</a></li>
+<li><a href="subscribe.html">Абонирай се</a></li>
+<li><a href="sizes.html">Размери и Грижа за дрехите </a></li>
+<li><a href="faq.html">Често задавани въпроси (FAQ)</a></li>
+<li><a href="contacts.html">Контакти </a></li>
+</ul>
+</nav>
+<div id="orders" class="forms">
+<form>
+<fieldset>
+<legend>Форма за поръчка</legend><br>
+<label for="product">Изберете продукт: </label>
+<select name="products" id="product">
+<option value="product1">Продукт 1</option>
+<option value="product2">Продукт 2</option>
+<option value="product3">Продукт 3</option>
+</select><br><br>
+<label for="quantity">Количество:</label><br>
+<input type="number" name="quantity" id="quantity" min="1" max="100" value="1"><br><br>
+<label for="colors">Цветове:</label><br>
+<input type="checkbox" id="black" name="colors" value="черно">
+<label for="black">черно</label><br>
+<input type="checkbox" id="white" name="colors" value="бяло">
+<label for="white">бяло</label><br>
+<input type="checkbox" id="silver" name="colors" value="сребро">
+<label for="silver">сиво</label><br>
+<input type="checkbox" id="gold" name="colors" value="златисто">
+<label for="gold">златисто</label><br>
+<input type="checkbox" id="red" name="colors" value="червено">
+<label for="red">червено</label><br>
+<input type="checkbox" id="green" name="colors" value="зелено">
+<label for="green">зелено</label><br>
+<input type="checkbox" id="blue" name="colors" value="синьо">
+<label for="blue">синьо</label><br><br>
+<label for="colors_palette">Палитра/за персонализирани поръчки/:</label><br>
+<input type="color" id="colors_palette" name="colors_palette"><br><br>
+<label for="name">Пълно име:</label><br>
+<label for="fname">Име:</label>
+<input type="text" name="name" id="fname" size="30" placeholder="Вашето име" required autofocus>
+<label for="lname">Фамилия:</label>
+<input type="text" name="name" id="lname" size="30" placeholder="Вашата фамилия" required><br><br>
+<label for="tel">Телефон:</label>
+<input type="tel" name="tel" id="tel" placeholder="Номер за контакт"><br><br>
+<label for="mail">Имейл:</label>
+<input type="email" name="mail" id="mail" size="30" placeholder="myname@example.com" required><br><br>
+<label for="address">Адрес за доставка:</label><br>
+<label for="street">Улица:</label>
+<input type="text" name="address" id="street" size="30" required><br>
+<label for="town">Град:</label>
+<input type="text" name="address" id="town" size="20" required><br>
+<label for="code">Пощенски код/Зип код:</label>
+<input type="text" name="address" id="code" size="10" required><br>
+<label for="country">Държава:</label>
+<input type="text" name="address" id="country" size="20" required><br><br>
+<label for="payment">Метод на плащане:</label><br>
+<input type="radio" id="cash" name="payment" value="В брой">
+<label for="cash">Наложен платеж</label>
+<input type="radio" id="card" name="payment" value="С карта">
+<label for="card">С карта</label><br><br>
+<label for="comments">Коментар:</label>
+<textarea name="comments" id="comments" rows="2" cols="20"></textarea><br><br>
+<input type="submit" value="Поръчай">
+</fieldset>
+</form>
+</div>
+</div>
+<footer> © 2024 VK Prestige Fashion. All Rights Reserved.</footer>
+</body>
+</html>
